@@ -70,4 +70,8 @@ form input, form textarea {
 form input[type="submit"] {
   font-weight:bold;
   cursor:pointer;
+
+h1, h2 {
+  color: lime;
+}
 }
