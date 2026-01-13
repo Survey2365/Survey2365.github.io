@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
 
+  <!-- Navbar -->
+  <nav>
+    <a href="/countdown">Countdown</a>
+    <a href="/requests">Requests</a>
+  </nav>
+
+  <h1>Website Launches In</h1>
+  <div id="timer">Loading...</div>
+
+  <!-- Iframe -->
+  <iframe src="https://example.com"></iframe>
+
+  <!-- Reveal link -->
+  <div id="reveal">
+    <h1><a href="/requests">ENTER WEBSITE</a></h1>
+  </div>
+
+  <!-- Countdown JS -->
+  <script>
+    const launch = new Date("January 20, 2026 08:55:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = launch - now;
+
+      if(diff <= 0){
+        document.getElementById("timer").style.display = "none";
+        document.getElementById("reveal").style.display = "block";
+        return;
+      }
+
+      const d = Math.floor(diff/(1000*60*60*24));
+      const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+      const m = Math.floor((diff%(1000*60*60))/(1000*60));
+      const s = Math.floor((diff%(1000*60))/1000);
+
+      document.getElementById("timer").innerText = `${d}d ${h}h ${m}m ${s}s`;
+    }, 1000);
+  </script>
+</body>
+</html>
