@@ -74,4 +74,8 @@ form input[type="submit"] {
 h1, h2 {
   color: lime;
 }
+
+h2 {
+  margin-top:50px;
+}
 }
