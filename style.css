@@ -1,6 +1,6 @@
 body {
   background:black;
-  color:white;
+  color:lime;
   font-family: Arial, sans-serif;
   text-align:center;
   margin:0;
@@ -28,12 +28,18 @@ nav a:hover {
 #timer {
   font-size:50px;
   margin-top:50px;
+  color:lime;
 }
 
 #reveal {
   display:none;
   margin-top:50px;
   font-size:40px;
+  color:lime;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:lime;
 }
 
 iframe {
@@ -70,10 +76,6 @@ form input, form textarea {
 form input[type="submit"] {
   font-weight:bold;
   cursor:pointer;
-
-h1, h2 {
-  color: lime;
-}
 
 h2 {
   margin-top:50px;
