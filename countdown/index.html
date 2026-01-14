@@ -17,19 +17,24 @@
 
   <!-- Reveal link -->
   <div id="reveal" style="display:none;">
-   <h1>
-    <a href="https://sites.google.com/view/nonblocked/" target="_blank" rel="noopener noreferrer">
-      ENTER WEBSITE
-    </a>
-   </h1>
+    <h1>
+      <a href="https://sites.google.com/view/nonblocked/" target="_blank" rel="noopener noreferrer">
+        ENTER WEBSITE
+      </a>
+    </h1>
   </div>
 
   <h2>Website will release 1/20/26 Tuesday 9:10 am EST</h2>
-  
+
   <!-- Countdown JS -->
   <script>
-    // Fixed target date
-    let launch = new Date("Jan 20, 2026 09:10:00").getTime();
+    // ===== CONFIG =====
+    const testMode = true; // set to false for real countdown
+    const testDurationMs = 1 * 60 * 1000; // 1 minute for testing
+    const realLaunch = new Date("Jan 20, 2026 09:10:00").getTime();
+
+    // ===== TARGET TIME =====
+    let launch = testMode ? new Date().getTime() + testDurationMs : realLaunch;
 
     const timerEl = document.getElementById("timer");
 
@@ -41,6 +46,10 @@
         clearInterval(interval); // stop countdown
         timerEl.style.display = "none";
         document.getElementById("reveal").style.display = "block";
+
+        // if we were testing, reset to real launch after finishing
+        if(testMode) launch = realLaunch;
+
         return;
       }
 
