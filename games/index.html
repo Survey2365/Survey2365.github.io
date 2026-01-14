@@ -2,25 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Brady Studios - Retro Bowl</title>
+    <title>Brady Studios - Games</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-    <!-- Game Card -->
-    <div class="game-card-container">
-        <div class="game-card">
-            <!-- Game iframe -->
-            <div class="game-frame">
-                <iframe src="https://classroom2111.github.io/g5/class-400/"></iframe>
-            </div>
-            <!-- Bottom info bar -->
-            <div class="game-info">
-                <span>Retro Bowl</span>
-                <button class="fullscreen-btn" onclick="document.querySelector('.game-frame iframe').requestFullscreen()">FULLSCREEN</button>
-            </div>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Brady Studios</div>
+        <div class="nav-links">
+            <a href="../countdown.html">Countdown</a>
+            <a href="../requests.html">Requests</a>
+            <a href="index.html">Games</a>
         </div>
     </div>
 
+    <h1 style="text-align:center; margin-top:30px;">🎮 Games</h1>
+
+    <!-- Game Container -->
+    <div id="gameContainer" class="game-grid"></div>
+
+    <script src="games.js"></script>
 </body>
 </html>
+
