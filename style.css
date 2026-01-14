@@ -85,8 +85,8 @@ h2 {
 /* Grid layout for multiple games */
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 30px; /* space between cards */
   padding: 20px;
 }
 
