@@ -30,7 +30,8 @@
   
   <!-- Countdown JS -->
   <script>
-    const launch = new Date("January 20, 2026 09:10:00").getTime();
+    let now = new Date().getTime();
+    let countDownDate = now + 1 * 60 * 1000; // 1 min in ms
 
     setInterval(() => {
       const now = new Date().getTime();
