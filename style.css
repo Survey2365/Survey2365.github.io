@@ -83,11 +83,14 @@ h2 {
 
 /* Game card container (centered page) */
 /* Grid layout for multiple games */
+/* Game grid: 3 cards per row */
 .game-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
-  gap: 30px; /* space between cards */
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 30px;
   padding: 20px;
+  max-width: 1200px; /* optional: keeps grid centered on large screens */
+  margin: 0 auto;    /* centers the grid horizontally */
 }
 
 /* Card styling */
@@ -102,7 +105,7 @@ h2 {
   box-shadow: 0 0 15px rgba(0,255,0,0.4);
 }
 
-/* Game iframe */
+/* Iframe inside card */
 .game-frame {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -125,7 +128,7 @@ h2 {
   font-weight: bold;
 }
 
-/* Fullscreen button */
+/* Fullscreen/play button */
 .fullscreen-btn {
   background: lime;
   color: black;
@@ -139,6 +142,20 @@ h2 {
 .fullscreen-btn:hover {
   background: #b6ff00;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .game-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .game-grid {
+    grid-template-columns: 1fr; /* 1 per row on small screens */
+  }
+}
+
 
 
 }
