@@ -82,13 +82,15 @@ h2 {
 }
 
 /* Game card container (centered page) */
-.game-card-container {
-  display: flex;
-  justify-content: center;
-  padding: 50px 20px;
+/* Grid layout for multiple games */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
 
-/* Single game card */
+/* Card styling */
 .game-card {
   border: 2px solid lime;
   border-radius: 14px;
@@ -97,11 +99,10 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 0;
-  width: 800px; /* adjust width as needed */
-  box-shadow: 0 0 20px rgba(0,255,0,0.5);
+  box-shadow: 0 0 15px rgba(0,255,0,0.4);
 }
 
-/* Top iframe section */
+/* Game iframe */
 .game-frame {
   aspect-ratio: 16 / 9;
   width: 100%;
@@ -118,7 +119,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
+  padding: 8px 12px;
   background: black;
   color: lime;
   font-weight: bold;
@@ -129,14 +130,15 @@ h2 {
   background: lime;
   color: black;
   border: none;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .fullscreen-btn:hover {
   background: #b6ff00;
 }
+
 
 }
