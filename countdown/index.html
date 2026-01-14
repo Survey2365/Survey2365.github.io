@@ -15,10 +15,8 @@
   <h1>Website Launches In</h1>
   <div id="timer">Loading...</div>
 
-  
-
   <!-- Reveal link -->
-  <div id="reveal">
+  <div id="reveal" style="display:none;">
    <h1>
     <a href="https://sites.google.com/view/nonblocked/" target="_blank" rel="noopener noreferrer">
       ENTER WEBSITE
@@ -30,24 +28,28 @@
   
   <!-- Countdown JS -->
   <script>
-    let countDownDate = new Date("Jan 20, 2026 09:10:00").getTime();
+    // Fixed target date
+    let launch = new Date("Jan 20, 2026 09:10:00").getTime();
 
-    setInterval(() => {
+    const timerEl = document.getElementById("timer");
+
+    const interval = setInterval(() => {
       const now = new Date().getTime();
       const diff = launch - now;
 
       if(diff <= 0){
-        document.getElementById("timer").style.display = "none";
+        clearInterval(interval); // stop countdown
+        timerEl.style.display = "none";
         document.getElementById("reveal").style.display = "block";
         return;
       }
 
-      const d = Math.floor(diff/(1000*60*60*24));
-      const h = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
-      const m = Math.floor((diff%(1000*60*60))/(1000*60));
-      const s = Math.floor((diff%(1000*60))/1000);
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((diff % (1000 * 60)) / 1000);
 
-      document.getElementById("timer").innerText = `${d}d ${h}h ${m}m ${s}s`;
+      timerEl.innerText = `${d}d ${h}h ${m}m ${s}s`;
     }, 1000);
   </script>
 </body>
