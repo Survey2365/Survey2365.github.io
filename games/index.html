@@ -7,31 +7,46 @@
 <body>
 
 <nav>
-<a href="/countdown">Countdown</a>
-<a href="/requests">Requests</a>
- <a href="/games">Games</a>
+  <a href="/countdown">Countdown</a>
+  <a href="/requests">Requests</a>
+  <a href="/games">Games</a>
 </nav>
 
 <h1>🎮 Games</h1>
 
 <div class="game-grid">
 
+  <!-- Retro Bowl -->
   <div class="game-card">
-    <img src="https://raw.githubusercontent.com/ironsnoutonline/ironsnoutonline.github.io/main/thumbnail.jpg">
-    <div class="game-title">Retro Bowl</div>
-    <a class="play-btn" href="/play/retrobowl">PLAY</a>
+    <div class="game-frame">
+      <img src="https://raw.githubusercontent.com/ironsnoutonline/ironsnoutonline.github.io/main/thumbnail.jpg">
+    </div>
+    <div class="game-info">
+      <span>Retro Bowl</span>
+      <button class="fullscreen-btn" onclick="window.open('/play/retrobowl', '_blank')">FULLSCREEN</button>
+    </div>
   </div>
 
+  <!-- Slope (first one) -->
   <div class="game-card">
-    <img src="https://smashkarts.io/favicon.ico">
-    <div class="game-title">Slope</div>
-    <a class="play-btn" href="/play/slope">PLAY</a>
+    <div class="game-frame">
+      <img src="https://smashkarts.io/favicon.ico">
+    </div>
+    <div class="game-info">
+      <span>Slope</span>
+      <button class="fullscreen-btn" onclick="window.open('/play/slope', '_blank')">FULLSCREEN</button>
+    </div>
   </div>
 
+  <!-- Slope (second one) -->
   <div class="game-card">
-    <img src="https://slopegame.github.io/slope.jpg">
-    <div class="game-title">Slope</div>
-    <a class="play-btn" href="/play/slope">PLAY</a>
+    <div class="game-frame">
+      <img src="https://slopegame.github.io/slope.jpg">
+    </div>
+    <div class="game-info">
+      <span>Slope</span>
+      <button class="fullscreen-btn" onclick="window.open('/play/slope', '_blank')">FULLSCREEN</button>
+    </div>
   </div>
 
 </div>
