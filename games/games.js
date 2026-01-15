@@ -9,8 +9,8 @@ const games = [
         url: "https://classroom2111.github.io/g5/class-450/"
     },
     {
-        name: "Smash Karts",
-        url: "https://smashkarts.io"
+        name: "Geometry Dash",
+        url: "https://geometrylitegame.org/game/geometry-dash-lite/"
     }
 ];
 
