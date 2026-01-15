@@ -2,7 +2,7 @@
 const games = [
     {
         name: "Retro Bowl",
-        url: "https://raw.githubusercontent.com/ironsnoutonline/ironsnoutonline.github.io/main/index.html"
+        url: "https://classroom2111.github.io/g5/class-400/"
     },
     {
         name: "Slope",
