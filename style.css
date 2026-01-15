@@ -156,6 +156,12 @@ h2 {
   }
 }
 
+.divider {
+    border: none;
+    height: 2px;
+    background: lime;  /* neon line */
+    margin: 0;         /* removes extra space */
+}
 
 
 }
