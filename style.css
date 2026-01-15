@@ -34,11 +34,18 @@ hr.divider {
 }
 
 #timer {
-  font-size:50px;
-  margin-top:50px;
-  color:lime;
-  box-shadow: 0 0 10px lime;
+    color: lime; /* main text color */
+    font-size: 3rem; /* adjust size as needed */
+    font-weight: bold;
+    text-align: center;
+    
+    text-shadow:
+        0 0 5px lime,
+        0 0 10px lime,
+        0 0 20px lime,
+        0 0 40px #b6ff00; /* extra glow */
 }
+
 
 #reveal {
   display:none;
