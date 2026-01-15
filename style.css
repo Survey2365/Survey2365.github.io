@@ -29,7 +29,7 @@ hr.divider {
     border: none;                  /* remove default border */
     height: 3px;                   /* thickness */
     background-color: lime !important;   /* force lime */
-    box-shadow: 0 0 10px lime;    /* optional neon glow */
+        /* optional neon glow */
     margin: 10px 0 20px 0;                     /* remove spacing */
 }
 
@@ -37,6 +37,7 @@ hr.divider {
   font-size:50px;
   margin-top:50px;
   color:lime;
+  box-shadow: 0 0 10px lime;
 }
 
 #reveal {
