@@ -120,13 +120,13 @@ h2 {
 
 /* Iframe inside card */
 .game-frame {
-  width: 100%;
+  width: 40%;
   aspect-ratio: 16 / 9; /* keeps proportional height */
   max-width: 100%;      /* never overflow card */
 }
 
 .game-frame iframe {
-  width: 100%;
+  width: 40%;
   height: 100%;
   border: none;
 }
