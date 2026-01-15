@@ -25,6 +25,14 @@ nav a:hover {
   color:#00aa00;
 }
 
+hr.divider {
+    border: none;                  /* remove default border */
+    height: 3px;                   /* thickness */
+    background-color: lime !important;   /* force lime */
+    box-shadow: 0 0 10px lime;    /* optional neon glow */
+    margin: 0;                     /* remove spacing */
+}
+
 #timer {
   font-size:50px;
   margin-top:50px;
@@ -156,13 +164,7 @@ h2 {
   }
 }
 
-hr.divider {
-    border: none;                  /* remove default border */
-    height: 3px;                   /* thickness */
-    background-color: lime !important;   /* force lime */
-    box-shadow: 0 0 10px lime;    /* optional neon glow */
-    margin: 0;                     /* remove spacing */
-}
+
 
 
 }
