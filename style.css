@@ -51,14 +51,14 @@ hr.divider {
   display:none;
   margin-top:50px;
   font-size:40px;
-  color:lime;
+  color:#1f1f1f;
 }
 
 .centered-text {
     width: 30%;           /* only 30% of the screen */
     margin: 20px auto;    /* top/bottom margin 20px, auto centers horizontally */
     text-align: center;   /* centers the text inside the box */
-    color: lime;          /* optional neon color */
+    color: #1f1f1f;          /* optional neon color */
     font-weight: bold;    /* optional bold */
 }
 
