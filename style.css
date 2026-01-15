@@ -54,6 +54,14 @@ hr.divider {
   color:lime;
 }
 
+.centered-text {
+    width: 30%;           /* only 30% of the screen */
+    margin: 20px auto;    /* top/bottom margin 20px, auto centers horizontally */
+    text-align: center;   /* centers the text inside the box */
+    color: lime;          /* optional neon color */
+    font-weight: bold;    /* optional bold */
+}
+
 h1, h2, h3, h4, h5, h6 {
   color:lime;
 }
