@@ -63,10 +63,16 @@ hr.divider {
 }
 
 .site-footer {
-    margin-top: 60px;
-    padding: 20px 0;
-    border-top: 2px solid lime;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
     background: black;
+    border-top: 2px solid lime;
+    text-align: center;
+    color: lime;
+    text-shadow: 0 0 5px lime, 0 0 10px lime;
 }
 
 .footer-content {
