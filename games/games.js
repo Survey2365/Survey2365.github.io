@@ -6,7 +6,7 @@ const games = [
     },
     {
         name: "Slope",
-        url: "https://slopegame.github.io"
+        url: "https://classroom2111.github.io/g5/class-450/"
     },
     {
         name: "Smash Karts",
