@@ -62,6 +62,23 @@ hr.divider {
     font-weight: bold;    /* optional bold */
 }
 
+.site-footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    border-top: 2px solid lime;
+    background: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: lime;
+    font-weight: bold;
+    text-shadow: 0 0 5px lime, 0 0 10px lime;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   color:lime;
 }
