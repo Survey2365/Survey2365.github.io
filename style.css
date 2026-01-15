@@ -51,14 +51,14 @@ hr.divider {
   display:none;
   margin-top:50px;
   font-size:40px;
-  color:#1f1f1f;
+  color:lime;
 }
 
 .centered-text {
     width: 30%;           /* only 30% of the screen */
     margin: 20px auto;    /* top/bottom margin 20px, auto centers horizontally */
     text-align: center;   /* centers the text inside the box */
-    color: #1f1f1f;          /* optional neon color */
+    color:lime;          /* optional neon color */
     font-weight: bold;    /* optional bold */
 }
 
@@ -71,7 +71,7 @@ hr.divider {
     background: black;
     border-top: 2px solid lime;
     text-align: center;
-    color: lime;
+    color:#1f1f1f;
     text-shadow: 0 0 5px lime, 0 0 10px lime;
 }
 
@@ -79,7 +79,7 @@ hr.divider {
     display: flex;
     justify-content: center;
     gap: 40px;
-    color: lime;
+    color:#1f1f1f;
     font-weight: bold;
     text-shadow: 0 0 5px lime, 0 0 10px lime;
 }
