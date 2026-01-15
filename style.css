@@ -111,12 +111,18 @@ h2 {
   flex-direction: column;
   gap: 0;
   box-shadow: 0 0 15px rgba(0,255,0,0.4);
+
+  width: 100%;        /* fill the grid column */
+  max-width: 350px;   /* prevents card from getting too wide */
+  margin: 0 auto;     /* center card inside column */
 }
+
 
 /* Iframe inside card */
 .game-frame {
-  aspect-ratio: 16 / 9;
   width: 100%;
+  aspect-ratio: 16 / 9; /* keeps proportional height */
+  max-width: 100%;      /* never overflow card */
 }
 
 .game-frame iframe {
@@ -124,6 +130,7 @@ h2 {
   height: 100%;
   border: none;
 }
+
 
 /* Bottom info bar */
 .game-info {
