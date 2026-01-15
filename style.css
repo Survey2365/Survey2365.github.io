@@ -30,7 +30,7 @@ hr.divider {
     height: 3px;                   /* thickness */
     background-color: lime !important;   /* force lime */
     box-shadow: 0 0 10px lime;    /* optional neon glow */
-    margin: 0;                     /* remove spacing */
+    margin: 10px 0 20px 0;                     /* remove spacing */
 }
 
 #timer {
